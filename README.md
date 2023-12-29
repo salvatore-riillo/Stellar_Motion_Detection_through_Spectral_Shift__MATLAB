@@ -19,6 +19,7 @@ Hydrogen characteristically absorbs light at a wavelength of 656.3 nanometers, b
 This shift is explained by the Doppler effect, a phenomenon more commonly associated with sound but equally applicable to light. This concept is similar to the experience of hearing a siren from an approaching or receding ambulance: the pitch sounds higher as it approaches and lowers as it moves away, due to the sound waves being compressed or stretched.
 
 In the case of Light, when a star moves relative to us, the wavelengths of the light it emits are altered. If the star is moving away, the light is redshifted, meaning the absorption lines are observed at longer wavelengths. Conversely, if the star is approaching, the light is blueshifted, and the lines are seen at shorter wavelengths. 
+
 ![Star spectrum and wavelength analysis](/star_wavelenght.png)
 
 In essence, the light from a star like HD 94028 is a cosmic messenger. By carefully analyzing this light, we can uncover the secrets of a star that lies thousands of light years away, learning not just about its current state, but also about its motion, hinting at the dynamic and ever-changing nature of our universe.
