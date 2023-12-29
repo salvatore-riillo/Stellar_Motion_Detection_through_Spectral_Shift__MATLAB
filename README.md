@@ -44,7 +44,12 @@ This file contains data related to stellar observations and spectra analysis.
 - **`starnames`**: An array with the names of the 7 stars
 
 
-
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
 
 
@@ -54,13 +59,25 @@ This file contains data related to stellar observations and spectra analysis.
 This file contains the MATLAB code used for the data analysis and visualization.
 
 
-
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
 
 
 ## File: `data_visualization_output.pdf`
 
 This file contains the visual output of the analysis.
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
 
 ## Folder: `imgs`
