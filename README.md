@@ -44,12 +44,21 @@ This file contains data related to stellar observations and spectra analysis.
 - **`starnames`**: An array with the names of the 7 stars
 
 
+
+
+
+
+
 ## File: `Stellar_Motion_Detection_through_Spectral_Shift__MATLAB_CODE.m`
 
 This file contains the MATLAB code used for the data analysis and visualization.
 
 
-## File: `data_visualization_output.html`
+
+
+
+
+## File: `data_visualization_output.pdf`
 
 This file contains the visual output of the analysis.
 
@@ -57,8 +66,3 @@ This file contains the visual output of the analysis.
 ## Folder: `imgs`
 
 This folder contains the images used in the README.md file.
-
-
-## Folder: `output_files`
-
-This folder contains the files liked to the data_visualization_output.html file.
