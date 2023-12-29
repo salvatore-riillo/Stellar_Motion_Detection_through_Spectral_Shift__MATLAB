@@ -21,6 +21,9 @@ This shift is explained by the Doppler effect, a phenomenon more commonly associ
 In the case of Light, when a star moves relative to us, the wavelengths of the light it emits are altered. If the star is moving away, the light is redshifted, meaning the absorption lines are observed at longer wavelengths. Conversely, if the star is approaching, the light is blueshifted, and the lines are seen at shorter wavelengths. 
 ![Star spectrum and wavelength analysis](/mnt/data/star_wavelenght.png)
 
+In essence, the light from a star like HD 94028 is a cosmic messenger. By carefully analyzing this light, we can uncover the secrets of a star that lies thousands of light years away, learning not just about its current state, but also about its motion, hinting at the dynamic and ever-changing nature of our universe.
+
+
 
 # 2) Star Data File Description
 
@@ -34,12 +37,11 @@ This file contains data related to stellar observations and spectra analysis.
 - **`spectra`**: Contains the spectral data, also in `float64` format.
 - **`None`**: A complex structure with various sub-elements like 's0', 's1', 's2', and 'arr', indicating different components of the spectral analysis.
 
-### Usage
-The data is crucial for analyzing the spectra of stars and understanding their properties through MATLAB-based spectral analysis.
 
 
 
 
-In essence, the light from a star like HD 94028 is a cosmic messenger. By carefully analyzing this light, we can uncover the secrets of a star that lies thousands of light years away, learning not just about its current state, but also about its motion, hinting at the dynamic and ever-changing nature of our universe.
+
+
 
 
