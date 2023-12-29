@@ -1,0 +1,198 @@
+% This LaTeX was auto-generated from MATLAB code.
+% To make changes, update the MATLAB code and export to LaTeX again.
+
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{epstopdf}
+\usepackage[table]{xcolor}
+\usepackage{matlab}
+\usepackage[paperheight=795pt,paperwidth=614pt,top=72pt,bottom=72pt,right=72pt,left=72pt,heightrounded]{geometry}
+
+\sloppy
+\epstopdfsetup{outdir=./}
+\graphicspath{ {./starproject_media/} }
+
+\begin{document}
+
+\begin{matlabcode}
+% Loading the data:
+load starData.mat
+
+% Calculating the wavelenghts:
+intervals = size(spectra, 1);
+lambdaStart = 630.02;
+lambdaDelta = 0.14;
+
+lambdaEnd = lambdaStart + (intervals-1) * lambdaDelta;
+lambda = (lambdaStart:lambdaDelta:lambdaEnd).';
+
+% Redshift calculation for all stars
+[sHa, idx] = min(spectra);
+lambdaHa = lambda(idx);
+z = (lambdaHa / 656.28) - 1;
+speed = z * 299792.458;
+
+% Loop through each star for analysis and visualization
+for i = 1:size(spectra, 2) % Looping through each star
+    spectrum = spectra(:, i); % Extracting the spectrum of the current star
+    wavelength = lambda; % Wavelength values
+
+    % Basic spectral analysis (finding the peak value)
+    [peakIntensity, peakIndex] = max(spectrum);
+    peakWavelength = wavelength(peakIndex);
+
+    % Movement analysis
+    restWavelength = 656.28; % Hydrogen alpha line in nanometers
+    observedWavelength = peakWavelength;
+    z = (observedWavelength - restWavelength) / restWavelength;
+
+    % Determining the direction of movement, star name and number
+    starName = starnames{i};
+    if z > 0
+        disp([starName, ' (Star ', num2str(i), ') is moving away.']);
+    else
+        disp([starName, ' (Star ', num2str(i), ') is moving towards.']);
+    end
+
+    % Visualization
+    figure;
+    plot(wavelength, spectrum);
+    hold on;
+    plot(peakWavelength, peakIntensity, 'r*', 'MarkerSize', 10);
+    title(['Spectrum of ', starName, ' (Star ', num2str(i), ')']);
+    xlabel('Wavelength');
+    ylabel('Intensity');
+    hold off;
+
+    % Add some blank line after each plot for spacing
+    disp(' '); 
+    disp(' ');
+    disp(' ');
+end
+\end{matlabcode}
+\begin{matlaboutput}
+HD  30584 (Star 1) is moving towards.
+\end{matlaboutput}
+\begin{center}
+\includegraphics[width=\maxwidth{57.90265930757652em}]{figure_0.eps}
+\end{center}
+\begin{matlaboutput}
+ 
+ 
+ 
+HD  10032 (Star 2) is moving towards.
+\end{matlaboutput}
+\begin{center}
+\includegraphics[width=\maxwidth{57.90265930757652em}]{figure_1.eps}
+\end{center}
+\begin{matlaboutput}
+ 
+ 
+ 
+HD  64191 (Star 3) is moving towards.
+\end{matlaboutput}
+\begin{center}
+\includegraphics[width=\maxwidth{57.90265930757652em}]{figure_2.eps}
+\end{center}
+\begin{matlaboutput}
+ 
+ 
+ 
+HD   5211 (Star 4) is moving towards.
+\end{matlaboutput}
+\begin{center}
+\includegraphics[width=\maxwidth{57.90265930757652em}]{figure_3.eps}
+\end{center}
+\begin{matlaboutput}
+ 
+ 
+ 
+HD  56030 (Star 5) is moving towards.
+\end{matlaboutput}
+\begin{center}
+\includegraphics[width=\maxwidth{57.90265930757652em}]{figure_4.eps}
+\end{center}
+\begin{matlaboutput}
+ 
+ 
+ 
+HD  94028 (Star 6) is moving towards.
+\end{matlaboutput}
+\begin{center}
+\includegraphics[width=\maxwidth{57.90265930757652em}]{figure_5.eps}
+\end{center}
+\begin{matlaboutput}
+ 
+ 
+ 
+SAO102986 (Star 7) is moving towards.
+\end{matlaboutput}
+\begin{center}
+\includegraphics[width=\maxwidth{57.90265930757652em}]{figure_6.eps}
+\end{center}
+\begin{matlaboutput}
+ 
+ 
+ 
+\end{matlaboutput}
+\begin{matlabcode}
+
+
+disp("Stars' wavelenghts comparison:")
+\end{matlabcode}
+\begin{matlaboutput}
+Stars' wavelenghts comparison:
+\end{matlaboutput}
+\begin{matlabcode}
+plot(lambda,spectra)
+legend(starnames)
+\end{matlabcode}
+\begin{center}
+\includegraphics[width=\maxwidth{57.90265930757652em}]{figure_7.eps}
+\end{center}
+\begin{matlabcode}
+
+
+
+% Identifying stars moving away/toward
+moveAway = starnames(speed > 0);
+moveToward = starnames(speed <=0);
+disp("These stars are moving away:")
+\end{matlabcode}
+\begin{matlaboutput}
+These stars are moving away:
+\end{matlaboutput}
+\begin{matlabcode}
+disp(moveAway)
+\end{matlabcode}
+\begin{matlaboutput}
+    "HD   5211"
+    "HD  56030"
+    "HD  94028"
+\end{matlaboutput}
+\begin{matlabcode}
+
+disp("and these stars are moving toward the Earth:") 
+\end{matlabcode}
+\begin{matlaboutput}
+and these stars are moving toward the Earth:
+\end{matlaboutput}
+\begin{matlabcode}
+disp(moveToward)
+\end{matlabcode}
+\begin{matlaboutput}
+    "HD  30584"
+    "HD  10032"
+    "HD  64191"
+    "SAO102986"
+\end{matlaboutput}
+
+\end{document}
