@@ -9,7 +9,7 @@ The process starts by analyzing the light emitted by these distant stars, which 
 When this starlight arrives, it carries with it a wealth of information. To unlock this information, astronomers use a tool known as a diffraction grating. This device works on the principle of diffraction, bending and spreading out light into its component wavelengths or colors, akin to how a prism works or how water droplets split sunlight into a rainbow. The result of this diffraction is a spectrum - a band of colors ranging from red to violet, where each color corresponds to a different wavelength of light.
 
 <p align="center">
-  <img src="spectroscopy.jpg" alt="Diffraction of light through a grating">
+  <img src="imgs/spectroscopy.jpg" alt="Diffraction of light through a grating">
 </p>
 
 
@@ -24,7 +24,7 @@ This shift is explained by the Doppler effect, a phenomenon more commonly associ
 In the case of Light, when a star moves relative to us, the wavelengths of the light it emits are altered. If the star is moving away, the light is redshifted, meaning the absorption lines are observed at longer wavelengths. Conversely, if the star is approaching, the light is blueshifted, and the lines are seen at shorter wavelengths. 
 
 <p align="center">
-  <img src="star_wavelenght.png" alt="Star spectrum and wavelength analysis">
+  <img src="imgs/star_wavelenght.png" alt="Star spectrum and wavelength analysis">
 </p>
 
 
@@ -36,19 +36,29 @@ In essence, the light from a star like HD 94028 is a cosmic messenger. By carefu
 
 ## File: `starData.mat`
 
-### Overview
 This file contains data related to stellar observations and spectra analysis.
 
 ### Data Structure
 - **`lambda`**: A variable representing wavelengths, stored as floating-point numbers (`float64`).
 - **`spectra`**: Contains the spectral data, also in `float64` format.
-- **`None`**: A complex structure with various sub-elements like 's0', 's1', 's2', and 'arr', indicating different components of the spectral analysis.
+- **`starnames`**: An array with the names of the 7 stars
 
 
+## File: `Stellar_Motion_Detection_through_Spectral_Shift__MATLAB_CODE.m`
+
+This file contains the MATLAB code used for the data analysis and visualization.
 
 
+## File: `data_visualization_output.html`
+
+This file contains the visual output of the analysis.
 
 
+## Folder: `imgs`
+
+This folder contains the images used in the README.md file.
 
 
+## Folder: `output_files`
 
+This folder contains the files liked to the data_visualization_output.html file.
