@@ -8,7 +8,10 @@ The process starts by analyzing the light emitted by these distant stars, which 
 
 When this starlight arrives, it carries with it a wealth of information. To unlock this information, astronomers use a tool known as a diffraction grating. This device works on the principle of diffraction, bending and spreading out light into its component wavelengths or colors, akin to how a prism works or how water droplets split sunlight into a rainbow. The result of this diffraction is a spectrum - a band of colors ranging from red to violet, where each color corresponds to a different wavelength of light.
 
-![Diffraction of light through a grating](spectroscopy.jpg)
+<p align="center">
+  <img src="spectroscopy.jpg" alt="Diffraction of light through a grating">
+</p>
+
 
 This spectrum is much more than a mere array of colors, it's filled with data about the star. The field of spectroscopy, which studies these spectra, allows astronomers to delve into the composition, temperature, and even the motion of stars. Each wavelength in the spectrum has a specific intensity or brightness, and by measuring these intensities across the spectrum, astronomers can infer a great deal about the star's properties.
 
@@ -20,7 +23,10 @@ This shift is explained by the Doppler effect, a phenomenon more commonly associ
 
 In the case of Light, when a star moves relative to us, the wavelengths of the light it emits are altered. If the star is moving away, the light is redshifted, meaning the absorption lines are observed at longer wavelengths. Conversely, if the star is approaching, the light is blueshifted, and the lines are seen at shorter wavelengths. 
 
-![Star spectrum and wavelength analysis](/star_wavelenght.png)
+<p align="center">
+  <img src="star_wavelenght.png" alt="Star spectrum and wavelength analysis">
+</p>
+
 
 In essence, the light from a star like HD 94028 is a cosmic messenger. By carefully analyzing this light, we can uncover the secrets of a star that lies thousands of light years away, learning not just about its current state, but also about its motion, hinting at the dynamic and ever-changing nature of our universe.
 
