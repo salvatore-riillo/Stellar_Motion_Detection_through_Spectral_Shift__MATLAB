@@ -115,3 +115,12 @@ This file contains the visual output of the analysis.
 ## Folder: `imgs`
 
 This folder contains the images used in the README.md file.
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+
+## Author:
+- Salvatore Riillo
